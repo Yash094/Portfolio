@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yash094</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://i.ibb.co/1nCdk5t/Yash-Logo-1.png" type="image/png">
+</head>
+
+<body>
+  <div id="loading_black">
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+  </div>
+
+  <div id="profile">
+    <div id="profile_img" style="background: url(https://i.ibb.co/1nCdk5t/Yash-Logo-1.png) center;">
+    </div>
+    <div id="username"><span style="display:block;">Yash</span><a href="https://github.com/Yash094">@Yash094</a>
+    </div>
+    <div id="userbio" style="display: block;">Hello, I am just a developer who loves to create discord bots!</div>
+    <div id="about">
+        <span style="display:block;"><i class="fas fa-users"></i> &nbsp; <a
+                href="https://github.com/Meme-Development">@Meme-Development</a></span>
+        <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; <a
+                href="mailto:hello@yashjoisar.me">hello@yashjoisar.me</a></span>
+        <span style="display:block;"><i class="fab fa-instagram"></i> &nbsp;&nbsp;<a href="http://www.instagram.com/yash_joisar">yash_joisar</a></span>
+        <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; India</span>
+    </div>
+    </div>
+  </div>
+  <div id="display">
+    <div>
+      <h1 style="position: relative"><br></h1>
+      <div class="projects" id="pages">
+        <a href="https://yashjoisar.me">
+          <section>
+            <div class="section_title">Home</div>
+            <div class="about_section">
+            </div>
+            <div class="bottom_section">
+            </div>
+          </section>
+        </a>
+        <a href="Code.html">
+          <section>
+            <div class="section_title">My Projects</div>
+            <div class="about_section">
+            </div>
+            <div class="bottom_section">
+            </div>
+          </section>
+        </a>
+
+        <a href="https://blog.yashjoisar.me">
+          <section>
+            <div class="section_title">Blog</div>
+            <div class="about_section">
+            </div>
+            <div class="bottom_section">
+            </div>
+          </section>
+        </a>
+        <a href="https://memer-api.live/discord">
+          <section>
+            <div class="section_title">Discord</div>
+            <div class="about_section">
+            </div>
+            <div class="bottom_section">
+            </div>
+          </section>
+        </a>
+      </div>
+    </div>
+    <div id="footer">
+    <h2>Hello Stranger👋</h2>
+    <h3>Welcome! I Hope your doing fine.</h3>
+    </div>
+  </div>
+  <script type="text/javascript">
+    setTimeout(function () {
+      document.getElementById("loading").classList.add("animated");
+      document.getElementById("loading").classList.add("fadeOut");
+      document.getElementById("loading_black").classList.add("animated");
+      document.getElementById("loading_black").classList.add("fadeOut");
+      setTimeout(function () {
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("loading_black").classList.remove("animated");
+        document.getElementById("loading_black").classList.remove("fadeOut");
+        document.getElementById("loading_black").style.display = "none";
+      }, 800);
+    }, 1500);
+  </script>
+
+
+  <script>const pages = new MagicGrid({
+      container: "#pages",
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true
+    }); $("document").ready(() => { pages.listen(); });</script>
+</body>
+
+</html>
