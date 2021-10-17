@@ -25,6 +25,13 @@
     "external_url": ""
    },
    {
+    "name": "blog",
+    "ID": "page_1",
+    "entries": [],
+    "is_external": false,
+    "external_url": ""
+   },
+   {
     "name": "Home",
     "ID": "page_0",
     "entries": [],
